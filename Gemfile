@@ -35,6 +35,8 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem "jquery-rails"
 gem 'jquery-ui-rails'
 
+gem 'devise'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
