@@ -1,7 +1,7 @@
 <!-- row 3 -->
 <div class="row">
 	<div class="jumbotron">
-		<h2>Header</h2>
+		<%= @username%>
 	</div>
 </div>
 <!-- row 2 -->
@@ -14,14 +14,17 @@
  			 </div>
 		</div>
 	</div>
+	<!-- for every post in the collection of posts 
+	write out content from that post -->
 	<div class="col-xs-6">
+	<% for @p in @posts %>
 		<div class="panel panel-default">
   			<div class="panel-body">
-   				 Tweets
+   				<p><%= @p.content  %></p>
  			 </div>
 		</div>
+		<% end %>
 	</div>
-
 		<div class="col-xs-3">
 		<div class="panel panel-default">
   			<div class="panel-body">
