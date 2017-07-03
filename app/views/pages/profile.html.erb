@@ -17,6 +17,7 @@
 	<!-- for every post in the collection of posts 
 	write out content from that post -->
 	<div class="col-xs-6">
+	<%=  render '/components/post_form' %>
 	<% for @p in @posts %>
 		<div class="panel panel-default">
   			<div class="panel-body">
@@ -31,11 +32,6 @@
    				 Who to follow
  			 </div>
 		</div>
-	</div>
-</div>
-<!-- row 3 -->
-<div class="row">
-		<div class="col-xs-3 col-xs-offset-9">
 		<div class="panel panel-default">
   			<div class="panel-body">
    				 About
@@ -43,4 +39,5 @@
 		</div>
 	</div>
 </div>
+<!-- row 3 -->
 </div>
